@@ -1,29 +1,20 @@
-import React from "react"
-import {
-  View,
-  Image,
-  Text,
-  ScrollView,
-  SafeAreaView,
-  StyleSheet
-} from "react-native"
+import React from "react";
+import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 
 const WelcomeScreen = () => {
-  return (
-    <SafeAreaView style={styles.container}>
+  return <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.group} />
         <View style={styles.group}>
-          <Image style={styles.logo} source={require("./logo.png")} />
-          <Text style={styles.text}>
-            Let's build something amazing together!
-          </Text>
+          <Image style={styles.logo} source={{
+          uri: "https://tommysudslaundrycom.files.wordpress.com/2023/08/2333453.png"
+        }} />
+          <Text style={styles.text}>{"Enjoy Life and Leave Your Laundry To Us"}</Text>
         </View>
-        <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
+        <Text style={styles.footer}></Text>
       </ScrollView>
-    </SafeAreaView>
-  )
-}
+    </SafeAreaView>;
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -49,7 +40,7 @@ const styles = StyleSheet.create({
   text: {
     textAlign: "center",
     fontSize: 28,
-    color: "#828AB0",
+    color: "#8f96bb",
     fontWeight: 700
   },
   footer: {
@@ -59,6 +50,5 @@ const styles = StyleSheet.create({
     fontWeight: 700,
     marginBottom: 20
   }
-})
-
-export default WelcomeScreen
+});
+export default WelcomeScreen;
