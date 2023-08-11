@@ -5,7 +5,7 @@ const windowHeight = Dimensions.get("window").height;
 
 const Welcome1 = () => {
   return <ImageBackground style={styles.container} source={require("./assets/background.png")} imageStyle={styles.background}>
-      <Text style={styles.heading}>Welcome Back</Text>
+      <Text style={styles.heading}>{"Tommy Suds"}</Text>
       <Text style={styles.description}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non at sed.
       </Text>
@@ -110,9 +110,5 @@ const buttonStyles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
     fontWeight: "bold"
-  },
-  childrenContainer: {
-    justifyContent: "center",
-    alignItems: "center"
   }
 });
